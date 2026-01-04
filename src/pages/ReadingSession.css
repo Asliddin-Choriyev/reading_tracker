@@ -1,0 +1,165 @@
+.reading-session {
+  padding: 20px 0;
+}
+
+.reading-session.error {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.session-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.back-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.session-title {
+  flex: 1;
+  text-align: center;
+}
+
+.session-title h1 {
+  color: #111827;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.book-subtitle {
+  color: yellow;
+  font-size: 16px;
+}
+
+.header-actions {
+  white-space: nowrap;
+}
+
+.session-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+  .session-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main-session {
+  grid-column: 1;
+}
+
+.session-sidebar {
+  grid-column: 2;
+}
+
+@media (max-width: 992px) {
+  .session-sidebar {
+    grid-column: 1;
+  }
+}
+
+.sidebar-section {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-section h3 {
+  color: #111827;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eef2ff;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.detail-value {
+  color: #111827;
+  font-weight: 500;
+}
+
+.status-value {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-value.reading {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-value.completed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-value.to_read {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.book-description {
+  color: #4b5563;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .session-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .session-title h1 {
+    font-size: 24px;
+  }
+  
+  .back-btn {
+    align-self: flex-start;
+  }
+  
+  .header-actions {
+    align-self: stretch;
+  }
+  
+  .header-actions .btn {
+    width: 100%;
+  }
+}
