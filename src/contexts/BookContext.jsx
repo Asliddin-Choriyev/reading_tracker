@@ -20,32 +20,7 @@ export const BookProvider = ({ children }) => {
       }
     } else {
       // Mock data for initial use
-      const mockBooks = [
-        {
-          id: 1,
-          title: "Sariq devni minib",
-          author: "Xudoyberdi To'xtaboyev",
-          totalPages: 250,
-          currentPage: 120,
-          genre: "fantasy",
-          status: "reading",
-          progress: 48,
-          addedDate: new Date().toISOString(),
-          description: "Sarguzashtli va qiziqarli kitob"
-        },
-        {
-          id: 2,
-          title: "Dunyoning ishlari",
-          author: "O'tkir Hoshimov",
-          totalPages: 400,
-          currentPage: 400,
-          genre: "fiction",
-          status: "completed",
-          progress: 100,
-          addedDate: new Date().toISOString(),
-          description: "Hayotiy kitob"
-        }
-      ];
+      const mockBooks = [];
       setBooks(mockBooks);
       localStorage.setItem('books', JSON.stringify(mockBooks));
     }
